@@ -323,7 +323,7 @@ class _FlexibleSpaceBarState extends State<FlexibleSpaceBar> {
             final bool effectiveCenterTitle = _getEffectiveCenterTitle(theme);
             final EdgeInsetsGeometry padding = widget.titlePadding ??
               EdgeInsetsDirectional.only(
-                start: effectiveCenterTitle && !(settings.hasLeading ?? false) ? 0.0 : 72.0,
+                start: effectiveCenterTitle ? 0.0 : 16.0,
                 bottom: 16.0,
               );
             final double scaleValue = Tween<double>(begin: widget.expandedTitleScale, end: 1.0).transform(t);
