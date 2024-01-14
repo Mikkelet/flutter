@@ -391,7 +391,6 @@ class _ExpansionPanelListState extends State<ExpansionPanelList> {
               ),
             ),
           ),
-          expandIconContainer,
         ],
       );
       if (child.canTapOnHeader) {
