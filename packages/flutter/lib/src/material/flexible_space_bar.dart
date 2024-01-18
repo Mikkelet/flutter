@@ -240,7 +240,7 @@ class _FlexibleSpaceBarState extends State<FlexibleSpaceBar> {
           // and the content should be visible, so opacity = 1.
           final double opacity = settings.maxExtent == settings.minExtent
               ? 1.0
-              : 1.0 - Interval(fadeStart, fadeEnd).transform(t);
+              : Interval(fadeStart, fadeEnd).transform(t);
           double height = settings.maxExtent;
 
           // StretchMode.zoomBackground
@@ -325,6 +325,7 @@ class _FlexibleSpaceBarState extends State<FlexibleSpaceBar> {
               EdgeInsetsDirectional.only(
                 start: effectiveCenterTitle ? 0.0 : 16.0,
                 bottom: 16.0,
+                end: 32
               );
             final double scaleValue = Tween<double>(begin: widget.expandedTitleScale, end: 1.0).transform(t);
             final Matrix4 scaleTransform = Matrix4.identity()
