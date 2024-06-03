@@ -1052,17 +1052,10 @@ void main() {
       throwsToolExit(),
     );
 
-<<<<<<< HEAD
-    expect(testLogger.errorText, contains("Use of undeclared identifier 'asdas'"));
-    expect(testLogger.errorText, contains('/Users/m/Projects/test_create/ios/Runner/AppDelegate.m:7:56'));
-    expect(testLogger.errorText, isNot(contains('Command PhaseScriptExecution failed with a nonzero exit code')));
-    expect(testLogger.warningText, isNot(contains('but the range of supported deployment target versions')));
-=======
     expect(logger.errorText, contains("Use of undeclared identifier 'asdas'"));
     expect(logger.errorText, contains('/Users/m/Projects/test_create/ios/Runner/AppDelegate.m:7:56'));
     expect(logger.errorText, isNot(contains('Command PhaseScriptExecution failed with a nonzero exit code')));
     expect(logger.warningText, isNot(contains('but the range of supported deployment target versions')));
->>>>>>> stable
     expect(fakeProcessManager, hasNoRemainingExpectations);
   }, overrides: <Type, Generator>{
     FileSystem: () => fileSystem,
@@ -1290,17 +1283,6 @@ void main() {
         <String>['build', 'ipa', '--no-pub']);
 
     expect(
-<<<<<<< HEAD
-        testLogger.statusText,
-        contains(
-            '[✓] App Settings Validation\n'
-            '    • Version Number: 12.34.56\n'
-            '    • Build Number: 666\n'
-            '    • Display Name: Awesome Gallery\n'
-            '    • Deployment Target: 17.0\n'
-            '    • Bundle Identifier: io.flutter.someProject\n'
-        )
-=======
       logger.statusText,
       contains(
         '[✓] App Settings Validation\n'
@@ -1310,7 +1292,6 @@ void main() {
         '    • Deployment Target: 17.0\n'
         '    • Bundle Identifier: io.flutter.someProject\n'
       ),
->>>>>>> stable
     );
     expect(
       logger.statusText,

@@ -387,14 +387,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-<<<<<<< HEAD
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-=======
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
->>>>>>> stable
 				PRODUCT_BUNDLE_IDENTIFIER = io.flutter.examples.fullPlatformView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -599,14 +595,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-<<<<<<< HEAD
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-=======
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
->>>>>>> stable
 				PRODUCT_BUNDLE_IDENTIFIER = io.flutter.examples.fullPlatformView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -619,14 +611,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-<<<<<<< HEAD
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-=======
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
->>>>>>> stable
 				PRODUCT_BUNDLE_IDENTIFIER = io.flutter.examples.fullPlatformView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

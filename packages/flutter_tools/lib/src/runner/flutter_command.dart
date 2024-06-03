@@ -367,11 +367,7 @@ abstract class FlutterCommand extends Command<void> {
     return bundle.defaultMainPath;
   }
 
-<<<<<<< HEAD
-  /// Indicates if the currenet command running has a terminal attached.
-=======
   /// Indicates if the current command running has a terminal attached.
->>>>>>> stable
   bool get hasTerminal => globals.stdio.hasTerminal;
 
   /// Path to the Dart's package config file.

@@ -62,20 +62,12 @@ void main() {
     expect(description[2], 'elevation: 20.0');
     expect(description[3], 'indicatorColor: Color(0x00000098)');
     expect(description[4], 'indicatorShape: CircleBorder(BorderSide(width: 0.0, style: none))');
-<<<<<<< HEAD
-    expect(description[5], 'labelTextStyle: MaterialStatePropertyAll(TextStyle(inherit: true, size: 7.0))');
-=======
     expect(description[5], 'labelTextStyle: WidgetStatePropertyAll(TextStyle(inherit: true, size: 7.0))');
->>>>>>> stable
     // Ignore instance address for IconThemeData.
     expect(description[6].contains('iconTheme: WidgetStatePropertyAll(IconThemeData'), isTrue);
     expect(description[6].contains('(color: Color(0x00000097))'), isTrue);
     expect(description[7], 'labelBehavior: NavigationDestinationLabelBehavior.alwaysHide');
-<<<<<<< HEAD
-    expect(description[8], 'overlayColor: MaterialStatePropertyAll(Color(0x00000096))');
-=======
     expect(description[8], 'overlayColor: WidgetStatePropertyAll(Color(0x00000096))');
->>>>>>> stable
   });
 
   testWidgets('NavigationBarThemeData values are used when no NavigationBar properties are specified', (WidgetTester tester) async {
@@ -226,11 +218,7 @@ void main() {
     await expectLater(find.byType(NavigationBar), matchesGoldenFile('indicator_custom_label_style.png'));
   });
 
-<<<<<<< HEAD
-  testWidgetsWithLeakTracking('NavigationBar respects NavigationBarTheme.overlayColor in active/pressed/hovered states', (WidgetTester tester) async {
-=======
   testWidgets('NavigationBar respects NavigationBarTheme.overlayColor in active/pressed/hovered states', (WidgetTester tester) async {
->>>>>>> stable
     tester.binding.focusManager.highlightStrategy = FocusHighlightStrategy.alwaysTraditional;
     const Color hoverColor = Color(0xff0000ff);
     const Color focusColor = Color(0xff00ffff);

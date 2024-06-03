@@ -17,11 +17,7 @@ import 'package:meta/meta.dart';
 import 'package:path/path.dart' as path; // flutter_ignore: package_path_import
 import 'package:test/test.dart' as test_package show test;
 import 'package:test/test.dart' hide test;
-<<<<<<< HEAD
-import 'package:unified_analytics/src/enums.dart';
-=======
 import 'package:unified_analytics/testing.dart';
->>>>>>> stable
 import 'package:unified_analytics/unified_analytics.dart';
 
 import 'fakes.dart';
@@ -326,14 +322,8 @@ FakeAnalytics getInitializedFakeAnalyticsInstance({
   required FileSystem fs,
   required FakeFlutterVersion fakeFlutterVersion,
   String? clientIde,
-<<<<<<< HEAD
-=======
   String? enabledFeatures,
->>>>>>> stable
-}) {
-  final Directory homeDirectory = fs.directory('/');
   final FakeAnalytics initialAnalytics = FakeAnalytics(
-    tool: DashTool.flutterTool,
     homeDirectory: homeDirectory,
     dartVersion: fakeFlutterVersion.dartSdkVersion,
     platform: DevicePlatform.linux,
@@ -354,10 +344,7 @@ FakeAnalytics getInitializedFakeAnalyticsInstance({
     flutterChannel: fakeFlutterVersion.channel,
     flutterVersion: fakeFlutterVersion.getVersionString(),
     clientIde: clientIde,
-<<<<<<< HEAD
-=======
     enabledFeatures: enabledFeatures,
->>>>>>> stable
   );
 }
 

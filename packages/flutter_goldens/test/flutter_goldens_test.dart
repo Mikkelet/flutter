@@ -748,57 +748,6 @@ void main() {
               'SWARMING_TASK_ID' : '12345678990',
               'GOLDCTL' : 'goldctl',
               'GIT_BRANCH' : 'master',
-<<<<<<< HEAD
-            },
-            operatingSystem: 'macos',
-          );
-          expect(
-            FlutterPostSubmitFileComparator.isAvailableForEnvironment(platform),
-            isTrue,
-          );
-        });
-
-        test('returns false on release branches in postsubmit', () {
-          platform = FakePlatform(
-            environment: <String, String>{
-              'FLUTTER_ROOT': _kFlutterRoot,
-              'SWARMING_TASK_ID' : 'sweet task ID',
-              'GOLDCTL' : 'some/path',
-              'GIT_BRANCH' : 'flutter-3.16-candidate.0',
-            },
-            operatingSystem: 'macos',
-          );
-          expect(
-            FlutterPostSubmitFileComparator.isAvailableForEnvironment(platform),
-            isFalse,
-          );
-        });
-
-        test('returns true on master branch in postsubmit', () {
-          platform = FakePlatform(
-            environment: <String, String>{
-              'FLUTTER_ROOT': _kFlutterRoot,
-              'SWARMING_TASK_ID' : 'sweet task ID',
-              'GOLDCTL' : 'some/path',
-              'GIT_BRANCH' : 'master',
-            },
-            operatingSystem: 'macos',
-          );
-          expect(
-            FlutterPostSubmitFileComparator.isAvailableForEnvironment(platform),
-            isTrue,
-          );
-        });
-
-        test('returns true on main branch in postsubmit', () {
-          platform = FakePlatform(
-            environment: <String, String>{
-              'FLUTTER_ROOT': _kFlutterRoot,
-              'SWARMING_TASK_ID' : 'sweet task ID',
-              'GOLDCTL' : 'some/path',
-              'GIT_BRANCH' : 'main',
-=======
->>>>>>> stable
             },
             operatingSystem: 'macos',
           );
@@ -977,11 +926,7 @@ void main() {
             operatingSystem: 'macos',
           );
           expect(
-<<<<<<< HEAD
-            FlutterPreSubmitFileComparator.isAvailableForEnvironment(platform),
-=======
             FlutterPreSubmitFileComparator.isForEnvironment(platform),
->>>>>>> stable
             isFalse,
           );
         });
@@ -998,11 +943,7 @@ void main() {
             operatingSystem: 'macos',
           );
           expect(
-<<<<<<< HEAD
-            FlutterPreSubmitFileComparator.isAvailableForEnvironment(platform),
-=======
             FlutterPreSubmitFileComparator.isForEnvironment(platform),
->>>>>>> stable
             isTrue,
           );
         });
@@ -1019,20 +960,12 @@ void main() {
             operatingSystem: 'macos',
           );
           expect(
-<<<<<<< HEAD
-            FlutterPreSubmitFileComparator.isAvailableForEnvironment(platform),
-=======
             FlutterPreSubmitFileComparator.isForEnvironment(platform),
->>>>>>> stable
             isTrue,
           );
         });
 
-        test('returns true for Luci', () {
-          platform = FakePlatform(
-            environment: <String, String>{
               'FLUTTER_ROOT': _kFlutterRoot,
-              'SWARMING_TASK_ID' : '12345678990',
               'GOLDCTL' : 'goldctl',
               'GOLD_TRYJOB' : 'git/ref/12345/head',
               'GIT_BRANCH' : 'master',
@@ -1121,11 +1054,7 @@ void main() {
             operatingSystem: 'macos',
           );
           expect(
-<<<<<<< HEAD
-            FlutterSkippingFileComparator.isAvailableForEnvironment(platform),
-=======
             FlutterSkippingFileComparator.isForEnvironment(platform),
->>>>>>> stable
             isTrue,
           );
         });
@@ -1141,11 +1070,7 @@ void main() {
             operatingSystem: 'macos',
           );
           expect(
-<<<<<<< HEAD
-            FlutterSkippingFileComparator.isAvailableForEnvironment(platform),
-=======
             FlutterSkippingFileComparator.isForEnvironment(platform),
->>>>>>> stable
             isTrue,
           );
         });
@@ -1186,11 +1111,7 @@ void main() {
             operatingSystem: 'macos',
           );
           expect(
-<<<<<<< HEAD
-            FlutterSkippingFileComparator.isAvailableForEnvironment(platform),
-=======
             FlutterSkippingFileComparator.isForEnvironment(platform),
->>>>>>> stable
             isFalse,
           );
         });

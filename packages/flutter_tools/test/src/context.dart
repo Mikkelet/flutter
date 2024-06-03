@@ -124,12 +124,8 @@ void testUsingContext(
           Pub: () => ThrowingPub(), // prevent accidentally using pub.
           CrashReporter: () => const NoopCrashReporter(),
           TemplateRenderer: () => const MustacheTemplateRenderer(),
-<<<<<<< HEAD
-          Analytics: () => NoOpAnalytics(),
-=======
           BuildTargets: () => const BuildTargetsImpl(),
           Analytics: () => const NoOpAnalytics(),
->>>>>>> stable
         },
         body: () {
           // To catch all errors thrown by the test, even uncaught async errors, we use a zone.

@@ -64,8 +64,6 @@ void main() {
     ProcessManager: () => processManager,
   });
 
-<<<<<<< HEAD
-=======
   testUsingContext('Flutter tester passes through impeller config and environment variables.', () async {
     processManager = FakeProcessManager.list(<FakeCommand>[]);
     device = createDevice(enableImpeller: true);
@@ -98,7 +96,6 @@ void main() {
     ProcessManager: () => processManager,
   });
 
->>>>>>> stable
   group('The FLUTTER_TEST environment variable is passed to the test process', () {
     setUp(() {
       processManager = FakeProcessManager.list(<FakeCommand>[]);

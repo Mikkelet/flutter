@@ -62,15 +62,12 @@ void main() {
     }, overrides: <Type, Generator>{
       AndroidBuilder: () => FakeAndroidBuilder(),
       Analytics: () => fakeAnalytics,
-<<<<<<< HEAD
-=======
     });
 
     testUsingContext('alias aab', () async {
       final BuildAppBundleCommand command =
           BuildAppBundleCommand(logger: BufferLogger.test());
       expect(command.aliases, contains('aab'));
->>>>>>> stable
     });
 
     testUsingContext('build type', () async {

@@ -834,17 +834,10 @@ void main() {
         throwsToolExit(),
       );
 
-<<<<<<< HEAD
-      expect(testLogger.errorText, contains("Use of undeclared identifier 'asdas'"));
-      expect(testLogger.errorText, contains('/Users/m/Projects/test_create/ios/Runner/AppDelegate.m:7:56'));
-      expect(testLogger.errorText, isNot(contains('Command PhaseScriptExecution failed with a nonzero exit code')));
-      expect(testLogger.warningText, isNot(contains('but the range of supported deployment target versions is')));
-=======
       expect(logger.errorText, contains("Use of undeclared identifier 'asdas'"));
       expect(logger.errorText, contains('/Users/m/Projects/test_create/ios/Runner/AppDelegate.m:7:56'));
       expect(logger.errorText, isNot(contains('Command PhaseScriptExecution failed with a nonzero exit code')));
       expect(logger.warningText, isNot(contains('but the range of supported deployment target versions is')));
->>>>>>> stable
     }, overrides: <Type, Generator>{
       FileSystem: () => fileSystem,
       Logger: () => logger,
@@ -1391,17 +1384,10 @@ Runner requires a provisioning profile. Select a provisioning profile in the Sig
         throwsToolExit(),
       );
 
-<<<<<<< HEAD
-      expect(testLogger.errorText, contains("Use of undeclared identifier 'asdas'"));
-      expect(testLogger.errorText, contains('/Users/m/Projects/test_create/ios/Runner/AppDelegate.m:7:56'));
-      expect(testLogger.errorText, isNot(contains('Command PhaseScriptExecution failed with a nonzero exit code')));
-      expect(testLogger.warningText, isNot(contains('but the range of supported deployment target versions is')));
-=======
       expect(logger.errorText, contains("Use of undeclared identifier 'asdas'"));
       expect(logger.errorText, contains('/Users/m/Projects/test_create/ios/Runner/AppDelegate.m:7:56'));
       expect(logger.errorText, isNot(contains('Command PhaseScriptExecution failed with a nonzero exit code')));
       expect(logger.warningText, isNot(contains('but the range of supported deployment target versions is')));
->>>>>>> stable
     }, overrides: <Type, Generator>{
       FileSystem: () => fileSystem,
       Logger: () => logger,

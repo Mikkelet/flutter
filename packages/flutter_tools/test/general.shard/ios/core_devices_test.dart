@@ -87,11 +87,7 @@ void main() {
     setUp(() {
       logger = BufferLogger.test();
       fakeProcessManager = FakeProcessManager.empty();
-<<<<<<< HEAD
-      // TODO(fujino): make this FakeProcessManager.empty()
-=======
       // TODO(fujino): re-use fakeProcessManager
->>>>>>> stable
       xcode = Xcode.test(processManager: FakeProcessManager.any());
       deviceControl = IOSCoreDeviceControl(
         logger: logger,
@@ -1344,13 +1340,8 @@ invalid JSON
         ];
         fakeProcessManager.addCommand(FakeCommand(
           command: args,
-<<<<<<< HEAD
-          onRun: () {
-            // Simulate that this command threw and simulataneously the OS
-=======
           onRun: (_) {
             // Simulate that this command threw and simultaneously the OS
->>>>>>> stable
             // deleted the temp directory
             expect(tempFile, exists);
             tempDir.deleteSync(recursive: true);
@@ -1364,12 +1355,8 @@ invalid JSON
         expect(fakeProcessManager, hasNoRemainingExpectations);
       });
 
-<<<<<<< HEAD
-=======
       testWithoutContext('Handles json file mysteriously disappearing', () async {
         final Directory tempDir = fileSystem.systemTempDirectory
-            .childDirectory('core_devices.rand0');
-        final File tempFile = tempDir.childFile('core_device_list.json');
         final List<String> args = <String>[
           'xcrun',
           'devicectl',
@@ -1411,11 +1398,9 @@ invalid JSON
         expect(fakeProcessManager, hasNoRemainingExpectations);
       });
 
->>>>>>> stable
       testWithoutContext('No devices', () async {
         const String deviceControlOutput = '''
 {
-  "info" : {
     "arguments" : [
       "devicectl",
       "list",
