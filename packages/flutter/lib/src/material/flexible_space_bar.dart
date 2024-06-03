@@ -320,7 +320,7 @@ class _FlexibleSpaceBarState extends State<FlexibleSpaceBar> {
             final double leadingPadding = (settings.hasLeading ?? true) ? 72.0 : 0.0;
             final EdgeInsetsGeometry padding = widget.titlePadding ??
               EdgeInsetsDirectional.only(
-                start: effectiveCenterTitle ? 0.0 : leadingPadding,
+                start: effectiveCenterTitle ? 0.0 : 16.0,
                 bottom: 16.0,
                 end: 32
               );
